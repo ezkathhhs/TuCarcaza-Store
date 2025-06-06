@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="detalle-titulo-pagina">Detalles de Carcasa - TucarCasa Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">TucarCasa Store</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-blue-200">Inicio</a></li>
+                    <li><a href="contacto.html" class="hover:text-blue-200">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <section id="carcasa-detalle-container" class="bg-white rounded-lg shadow-md p-8 max-w-3xl mx-auto">
+            <div class="text-center text-red-500 font-bold" id="error-carcasa-no-encontrada" style="display:none;">
+                Carcasa no encontrada. Por favor, vuelve al catálogo.
+            </div>
+        </section>
+
+        <div class="mt-8 text-center">
+            <a href="index.html" class="text-blue-600 hover:underline">← Volver al Catálogo</a>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center mt-8">
+        <p>&copy; 2025 Carcasas Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

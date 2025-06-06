@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Carcasas Store</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilo para mensajes de error de validación */
+        .error-message {
+            color: #dc2626; /* red-600 de Tailwind */
+            font-size: 0.875rem; /* text-sm de Tailwind */
+            margin-top: 0.25rem; /* mt-1 de Tailwind */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Carcasas Store</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-blue-200">Inicio</a></li>
+                    <li><a href="contacto.html" class="hover:text-blue-200">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <section class="bg-white rounded-lg shadow-md p-8 max-w-lg mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">Contáctanos</h2>
+
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label for="nombre" class="block text-gray-700 text-sm font-bold mb-2">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500" placeholder="Tu nombre">
+                    <p id="error-nombre" class="error-message"></p>
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500" placeholder="tu.email@ejemplo.com">
+                    <p id="error-email" class="error-message"></p>
+                </div>
+                <div>
+                    <label for="asunto" class="block text-gray-700 text-sm font-bold mb-2">Asunto:</label>
+                    <input type="text" id="asunto" name="asunto" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500" placeholder="Pregunta sobre un producto">
+                    <p id="error-asunto" class="error-message"></p>
+                </div>
+                <div>
+                    <label for="mensaje" class="block text-gray-700 text-sm font-bold mb-2">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    <p id="error-mensaje" class="error-message"></p>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full">
+                    Enviar Mensaje
+                </button>
+                <div id="form-success-message" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mt-4" role="alert">
+                    <strong class="font-bold">¡Éxito!</strong>
+                    <span class="block sm:inline">Tu mensaje ha sido enviado correctamente.</span>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center mt-8">
+        <p>&copy; 2025 Carcasas Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

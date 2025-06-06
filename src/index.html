@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Carcasas - Inicio</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-blue-600 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">TucarCasa Store</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="index.html" class="hover:text-blue-200">Inicio</a></li>
+                    <li><a href="contacto.html" class="hover:text-blue-200">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <section class="mb-8 p-4 bg-white rounded-lg shadow-md">
+            <h2 id="mensaje-bienvenida" class="text-2xl font-semibold text-center text-blue-700"></h2>
+            <p class="mt-2 text-center text-gray-600">Explora nuestra increíble colección de carcasas para tu dispositivo.</p>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-3xl font-bold mb-6 text-center">Nuestras Carcasas Destacadas</h2>
+            <div id="carcasas-destacadas" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                </div>
+        </section>
+
+        <section class="mb-8 p-6 bg-white rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4 cursor-pointer text-blue-700" id="toggle-about">
+                Acerca de Nosotros <span id="arrow" class="ml-2">&#9660;</span>
+            </h2>
+            <div id="about-content" class="hidden mt-4 text-gray-700">
+                <p class="mb-2">En Carcasas Store, nos dedicamos a ofrecer las mejores carcasas para proteger y personalizar tus dispositivos. Creemos que la protección no tiene por qué sacrificar el estilo.</p>
+                <p>Nuestros productos están fabricados con materiales de alta calidad y diseñados para adaptarse perfectamente a una amplia variedad de modelos de teléfonos.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center mt-8">
+        <p>&copy; 2025 Carcasas Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
