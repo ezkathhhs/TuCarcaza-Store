@@ -49,4 +49,4 @@ Enlace al Despliegue (Opcional - Bonus):
 
 Si el proyecto está desplegado en Vercel, el enlace público estará aquí:
 
-[Enlace al Despliegue en Vercel (Placeholder)](tu-carcaza-store.vercel.app)
+[Enlace al Despliegue en Vercel (Placeholder)](https://tu-carcaza-store.vercel.app/)
