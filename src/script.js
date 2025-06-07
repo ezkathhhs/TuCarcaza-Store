@@ -5,7 +5,7 @@ const carcasasData = [
     {
         id: 1,
         nombre: 'Carcasa Transparente Ultra Fina',
-        imagen: 'https://via.placeholder.com/500x400?text=Carcasa+Transparente',
+        imagenDetalle: 'assets/images/Carcasa-Transparente-Ultra-Fina.jpg',
         descripcion: 'Protección discreta que mantiene el diseño original de tu teléfono. Fabricada con TPU flexible de alta calidad que no amarillea. Proporciona una excelente absorción de impactos y un agarre cómodo.',
         precio: '12.990',
         material: 'TPU Flexible',
@@ -16,7 +16,7 @@ const carcasasData = [
     {
         id: 2,
         nombre: 'Carcasa Reforzada Antigolpes',
-        imagen: 'https://via.placeholder.com/500x400?text=Carcasa+Antigolpes',
+        imagenDetalle: 'assets/images/Carcasa-Reforzada-Antigolpes.jpg',
         descripcion: 'Diseño robusto con esquinas reforzadas para máxima protección contra caídas y golpes severos. Ideal para aventureros y quienes necesitan una seguridad extra para su dispositivo.',
         precio: '19.990',
         material: 'Policarbonato y TPU',
@@ -27,7 +27,7 @@ const carcasasData = [
     {
         id: 3,
         nombre: 'Carcasa de Silicona Colores Pastel',
-        imagen: 'https://via.placeholder.com/500x400?text=Carcasa+Silicona+Pastel',
+        imagenDetalle: 'assets/images/Carcasa-de-Silicona-Colores-Pastel.jpg',
         descripcion: 'Suave al tacto y con un acabado mate, disponible en una variedad de colores pastel vibrantes. Proporciona un agarre antideslizante y protección contra arañazos diarios.',
         precio: '15.490',
         material: 'Silicona Líquida',
@@ -38,7 +38,7 @@ const carcasasData = [
     {
         id: 4,
         nombre: 'Carcasa de Cuero Premium',
-        imagen: 'https://via.placeholder.com/500x400?text=Carcasa+Cuero',
+        imagenDetalle: 'assets/images/Carcasa-de-Cuero-Premium.jpg',
         descripcion: 'Elegancia y sofisticación con nuestra carcasa de cuero genuino. Protege tu dispositivo con estilo, desarrollando una pátina única con el tiempo que le dará un carácter distintivo.',
         precio: '25.000',
         material: 'Cuero Genuino',
@@ -49,7 +49,7 @@ const carcasasData = [
     {
         id: 5,
         nombre: 'Carcasa con Diseño Geométrico',
-        imagen: 'https://via.placeholder.com/500x400?text=Carcasa+Geometrica',
+        imagenDetalle: 'assets/images/Carcasa-con-Diseño-Geometrico.jpg',
         descripcion: 'Dale un toque moderno a tu teléfono con esta carcasa de patrón geométrico único. Combina estilo y protección, ofreciendo una alta resistencia a arañazos y un agarre seguro.',
         precio: '14.000',
         material: 'TPU y Policarbonato',
@@ -151,16 +151,16 @@ function renderizarDetalleCarcasa() {
                 <h2 class="text-3xl font-bold mb-6 text-center text-blue-700">${carcasa.nombre}</h2>
                 <div class="flex flex-col md:flex-row gap-6">
                     <div class="md:w-1/2">
-                        <img src="${carcasa.imagen}" alt="${carcasa.nombre}" class="w-full rounded-lg shadow-sm">
+                        <img src="${carcasa.imagenDetalle}" alt="Detalle de ${carcasa.nombre}" class="w-full rounded-lg shadow-sm">
                     </div>
                     <div class="md:w-1/2">
                         <h3 class="text-2xl font-semibold mb-2">${carcasa.nombre}</h3>
                         <p class="text-gray-700 mb-4">${carcasa.descripcion}</p>
                         <ul class="list-disc list-inside text-gray-600 mb-4">
-                            <li>**Material:** ${carcasa.material}</li>
-                            <li>**Compatibilidad:** ${carcasa.compatibilidad}</li>
-                            <li>**Colores disponibles:** ${carcasa.colores.join(', ')}</li>
-                            <li>**Características:** ${carcasa.caracteristicas.join(', ')}</li>
+                            <li><span class="font-bold">Material:</span> ${carcasa.material}</li>
+                            <li><span class="font-bold">Compatibilidad:</span> ${carcasa.compatibilidad}</li>
+                            <li><span class="font-bold">Colores disponibles:</span> ${carcasa.colores.join(', ')}</li>
+                            <li><span class="font-bold">Características:</span> ${carcasa.caracteristicas.join(', ')}</li>
                         </ul>
                         <p class="text-blue-700 font-bold text-3xl mb-6">$${carcasa.precio}</p>
                         <button class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600 transition duration-300 w-full md:w-auto">Agregar al Carrito</button>
